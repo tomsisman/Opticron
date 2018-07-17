@@ -191,6 +191,9 @@ div#responsive-menu {
 .footer {
     background-color: #bbbdbf;
     color: #FFF;
+    padding: 40px 0;
+    /* display: flex;
+    height: 100%; */
 }
 
 .get-in-touch {
@@ -214,6 +217,10 @@ div#responsive-menu {
     padding: 0 20px;
 }
 
+.site-map {
+    margin-top: 50px;
+}
+
 @media (max-width: 1024px) {
     .section--v-padding {
         padding-left: 0;
@@ -232,10 +239,20 @@ div#responsive-menu {
     header {
         padding: 30px 0;
     }
+    .site-map {
+        margin-top: 0;
+    }
 }
 @media (max-width: 600px) {  
     .product-categories {
         width: 80%;
         margin: 0 auto;
+    }
+    .get-in-touch {
+        width: 234px;
+        text-align: center;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
     }
 }
