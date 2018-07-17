@@ -7,13 +7,15 @@
     <title>Opticron</title>
     <link rel="icon" type="image/ico" href="http://www.opticron.co.uk/favicon.ico">
     <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="slick/slick.css" />
+    <link rel="stylesheet" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
       crossorigin="anonymous">
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
     <header>
-      <div class="content-container">
+      <div class="content-container mobile-container">
         <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="large">
           <div class="title-bar-title">Menu</div>
           <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
@@ -51,7 +53,6 @@
               </li>
             </ul>
           </div>
-        
       </div>
     </header>
 
@@ -70,7 +71,7 @@
           </li>
         </ul>
         <nav class="orbit-bullets">
-          <div class="content-container">
+          <div class="content-container mobile-container">
             <button class="is-active" data-slide="0">
               <span class="show-for-sr">First slide details.</span>
               <span class="show-for-sr">Current Slide</span>
@@ -85,10 +86,136 @@
       </div>
     </div>
     
+    <main class="content-container">
+      <section class="section section--no-top-padding grid-x grid-padding-x">
+        <div class="large-3 medium-6 small-12 cell">
+          <h3 class="subheader">New Products</h3>
+          <img class="full-width" src="https://placehold.it/300x250">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididu</p>
+          <a href="#" class="button">New Products</a>
+        </div>
+        <div class="large-3 medium-6 small-12 cell">
+          <h3 class="subheader">Field Events</h3>
+          <img class="full-width" src="https://placehold.it/300x250">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididu</p>
+          <a href="#" class="button">View Events</a>
+        </div>
+        <div class="large-3 medium-6 small-12 cell">
+          <h3 class="subheader">Latest News</h3>
+          <img class="full-width" src="https://placehold.it/300x250">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididu</p>
+          <a href="#" class="button">Read Article</a>
+        </div>
+        <div class="large-3 medium-6 small-12 cell">
+          <h3 class="subheader">Gallery</h3>
+          <img class="full-width" src="https://placehold.it/300x250">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididu</p>
+          <a href="#" class="button">View Gallery</a>
+        </div>
+      </section>
+
+      <section class="section--grey section--v-padding section">
+        <h3 class="subheader subheader--center">Special Offers</h3>
+        <div class="grid-x grid-padding-x">
+
+          <div class="large-4 medium-12 small-12 cell">
+            <div class="special-offers">
+              <img class="full-width" src="https://placehold.it/400x300">
+              <div class="special-offers__text-container">
+                <p class="text--no-margin-bottom text--center text--margin-top">Discover WP PC</p>
+                <p class="text--no-margin-bottom text--bold text--center">£20 Cashback</p>
+              </div>
+            </div>
+          </div>
+          <div class="large-4 medium-12 small-12 cell">
+            <div class="special-offers">
+              <img class="full-width" src="https://placehold.it/400x300">
+              <div class="special-offers__text-container">
+                <p class="text--no-margin-bottom text--center">HR ED Fieldscopes</p>
+                <p class="text--no-margin-bottom text--bold text--center">Free Digiscoping Kit</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="large-4 medium-12 small-12 cell">
+            <div class="special-offers">
+              <img class="full-width" src="https://placehold.it/400x300">
+              <div class="special-offers__text-container">
+                <p class="text--no-margin-bottom text--center text--margin-top">IS 60 WP Fieldscope Kits</p>
+                <p class="text--no-margin-bottom text--bold text--center">Save 25%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-6 small-centered text-center columns">
+            <a href="#" class="button button--inner-margin">View All Offers</a>
+          </div>
+        </div>
+      </section>
+   
+      <section class="section">
+        <h3 class="subheader subheader--center">Product Categories</h3>
+        <div class="product-categories">
+          <div class="product-categories__slide">
+            <img class="center" src="https://placehold.it/300x250">
+            <h5 class="subheader subheader--center">Binoculars</h5>
+          </div>
+          <div class="product-categories__slide">
+            <img class="center" src="https://placehold.it/300x250">
+            <h5 class="subheader subheader--center">Compact Binoculars</h5>
+          </div>
+          <div class="product-categories__slide">
+            <img class="center" src="https://placehold.it/300x250">
+            <h5 class="subheader subheader--center">Telescopes & Eyepieces</h5>
+          </div>
+          <div class="product-categories__slide">
+            <img class="center" src="https://placehold.it/300x250">
+            <h5 class="subheader subheader--center">Observation & Marine</h5>
+          </div>
+          <div class="product-categories__slide">
+            <img class="center" src="https://placehold.it/300x250">
+            <h5 class="subheader subheader--center">Magic Goggles</h5>
+          </div>
+        </div>  
+      </section>
+    </main>
+
+    <!-- <footer class="footer">
+      <div class="content-container">
+        <div class="grid-x grid-padding-x">
+          <div class="large-8 medium-8 small-8 cell"> 
+            <p>Optricon Unit 21, Titan Court, Laporte Way, Luton, Bedfordshire, LU4 8EF, UK</p>
+            <p>Site Map
+              <a href="#" class="text-color--white"> /Terms/</a>
+              <a href="#" class="text-color--white"> /Privacy Policy/</a>
+              <a href="#" class="text-color--white">Site By Verto</a>
+            </p>
+          </div>
+          <div class="large-4 medium-4 small-4 cell">
+            <div>
+                <h3 class="subheader text-color--white get-in-touch text--no-margin-bottom">call
+                  <strong>01582 726522</strong>
+                </h3>
+                <h5 class="get-in-touch">email us sales@opticron.co.uk</h5>
+                <p class="get-in-touch">
+                  <span><i class="fab fa-facebook-f"></i></span>
+                  <span><i class="fab fa-twitter"></i></span>
+                  <span><i class="fab fa-linkedin-in"></i></span>
+                  <span><i class="fab fa-youtube"></i></span>
+                  <span><i class="fab fa-google-plus-g"></i></span>
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer> -->
+
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
+    <script src="slick/slick.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
