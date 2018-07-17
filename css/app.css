@@ -2,19 +2,76 @@
 .content-container {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 1rem;     
 }
 
 a {
     color: #444;
 }
 
+.full-width {
+    width: 100%;
+}
+
+.button {
+   background-color: #008542;
+}
+.button--inner-margin {
+    margin-bottom: -35px;
+}
 .button--grey {
     color: #FFF;
     background-color: #929497;
     padding: 0.7rem 0.7rem !important;
 }
+.subheader--center, .text--center {
+    text-align: center;
+}
 
+.text-color--white {
+    color: #FFF;
+}
+.text--no-margin-bottom {
+    margin-bottom: 0;
+}
+.text--bold {
+    font-weight: 700;
+}
+.text--justified {
+    text-align: justify;
+    text-justify: auto;
+    width: 300px;
+}
+.special-offers {
+    background-color: #FFF;
+    margin: 35px 0;
+}
+.special-offers__text-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
+.section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin: 0 auto;
+}
+
+.section--grey {
+    background-color: #E6E7E8;
+}
+
+.section--no-top-padding {
+    padding-top: 0;
+}
+
+.section--v-padding {
+    padding-left: 30px;
+    padding-right: 30px;
+}
 /********* Header **********/
 
 header {
@@ -109,4 +166,76 @@ div#responsive-menu {
 
 .orbit-bullets button.is-active {
     background-color: #008542;
+}
+
+/********* Product Categories **********/
+.slick-prev:before,
+.slick-next:before {
+    opacity: 1;
+    color: #bbbdbf;
+}
+
+.slick-slide {
+    width: 100px;
+}
+
+.product-categories {
+    width: 90%;
+    margin: 0 auto;
+}
+.product-categories__slide {
+    padding: 0 10px;
+}
+
+/********* Footer **********/
+.footer {
+    background-color: #bbbdbf;
+    color: #FFF;
+}
+
+.get-in-touch {
+    width: 274px;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.get-in-touch span:first-child {
+    border-left: none;
+    padding-left: 0;
+}
+.get-in-touch span:last-child {
+    padding-right: 0;
+}
+.get-in-touch span {
+    text-align: center;
+    border-left: #444 1px solid;
+    padding: 0 20px;
+}
+
+@media (max-width: 1024px) {
+    .section--v-padding {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .product-categories {
+        margin: 0 auto;
+    }
+    .center {
+        margin: 0;
+    }
+    .mobile-container {
+        padding-right: 0.625rem;
+        padding-left: 0.625rem;
+    }
+    header {
+        padding: 30px 0;
+    }
+}
+@media (max-width: 600px) {  
+    .product-categories {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
